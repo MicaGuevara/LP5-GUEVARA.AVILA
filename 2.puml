@@ -1,0 +1,62 @@
+@startuml
+annotation jakarta.validation.Valid
+annotation org.springframework.beans.factory.annotation.Autowired
+annotation org.springframework.web.bind.annotation.DeleteMapping
+annotation org.springframework.web.bind.annotation.ExceptionHandler
+annotation org.springframework.web.bind.annotation.GetMapping
+annotation org.springframework.web.bind.annotation.PatchMapping
+annotation org.springframework.web.bind.annotation.PathVariable
+annotation org.springframework.web.bind.annotation.PostMapping
+annotation org.springframework.web.bind.annotation.PutMapping
+annotation org.springframework.web.bind.annotation.RequestBody
+annotation org.springframework.web.bind.annotation.RequestMapping
+annotation org.springframework.web.bind.annotation.ResponseStatus
+annotation org.springframework.web.bind.annotation.RestController
+class jakarta.servlet.http.HttpServletRequest
+class java.time.LocalDateTime
+class java.util.ArrayList
+class java.util.HashMap
+class java.util.List
+class java.util.Map
+class labintec.dev.demo.UsuarioService.UsuarioService
+class labintec.dev.demo.controlador.ManejadorExcepciones
+class labintec.dev.demo.controlador.UsuarioController
+class labintec.dev.demo.dto.UsuarioDTO
+class labintec.dev.demo.dto.UsuarioMapper
+class labintec.dev.demo.entidad.Usuario
+class labintec.dev.demo.excepcion.RecursoDuplicadoException
+class labintec.dev.demo.excepcion.RecursoNoEncontradoException
+class org.springframework.http.HttpStatus
+class org.springframework.http.ResponseEntity
+class org.springframework.web.bind.annotation.RequestParam
+labintec.dev.demo.controlador.ManejadorExcepciones ..> org.springframework.web.bind.annotation.ExceptionHandler
+labintec.dev.demo.controlador.ManejadorExcepciones ..> jakarta.servlet.http.HttpServletRequest
+labintec.dev.demo.controlador.ManejadorExcepciones ..> java.time.LocalDateTime
+labintec.dev.demo.controlador.ManejadorExcepciones ..> java.util.HashMap
+labintec.dev.demo.controlador.ManejadorExcepciones ..> java.util.Map
+labintec.dev.demo.controlador.ManejadorExcepciones ..> labintec.dev.demo.excepcion.RecursoDuplicadoException
+labintec.dev.demo.controlador.ManejadorExcepciones ..> labintec.dev.demo.excepcion.RecursoNoEncontradoException
+labintec.dev.demo.controlador.ManejadorExcepciones ..> org.springframework.http.HttpStatus
+labintec.dev.demo.controlador.ManejadorExcepciones ..> org.springframework.http.ResponseEntity
+labintec.dev.demo.controlador.UsuarioController ..> jakarta.validation.Valid
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.beans.factory.annotation.Autowired
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.DeleteMapping
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.GetMapping
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.PatchMapping
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.PathVariable
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.PostMapping
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.PutMapping
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.RequestBody
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.RequestMapping
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.ResponseStatus
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.RestController
+labintec.dev.demo.controlador.UsuarioController ..> java.util.ArrayList
+labintec.dev.demo.controlador.UsuarioController ..> java.util.List
+labintec.dev.demo.controlador.UsuarioController ..> java.util.Map
+labintec.dev.demo.controlador.UsuarioController ..> labintec.dev.demo.UsuarioService.UsuarioService
+labintec.dev.demo.controlador.UsuarioController ..> labintec.dev.demo.dto.UsuarioDTO
+labintec.dev.demo.controlador.UsuarioController ..> labintec.dev.demo.dto.UsuarioMapper
+labintec.dev.demo.controlador.UsuarioController ..> labintec.dev.demo.entidad.Usuario
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.http.HttpStatus
+labintec.dev.demo.controlador.UsuarioController ..> org.springframework.web.bind.annotation.RequestParam
+@enduml

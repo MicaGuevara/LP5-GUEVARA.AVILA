@@ -1,0 +1,19 @@
+@startuml
+annotation org.springframework.beans.factory.annotation.Autowired
+annotation org.springframework.stereotype.Service
+class java.util.List
+class java.util.Optional
+class labintec.dev.demo.UsuarioService.UsuarioService
+class labintec.dev.demo.entidad.Usuario
+class labintec.dev.demo.excepcion.RecursoDuplicadoException
+class labintec.dev.demo.excepcion.RecursoNoEncontradoException
+class labintec.dev.demo.repositorio.UsuarioRepository
+labintec.dev.demo.UsuarioService.UsuarioService ..> org.springframework.beans.factory.annotation.Autowired
+labintec.dev.demo.UsuarioService.UsuarioService ..> org.springframework.stereotype.Service
+labintec.dev.demo.UsuarioService.UsuarioService ..> java.util.List
+labintec.dev.demo.UsuarioService.UsuarioService ..> java.util.Optional
+labintec.dev.demo.UsuarioService.UsuarioService ..> labintec.dev.demo.entidad.Usuario
+labintec.dev.demo.UsuarioService.UsuarioService ..> labintec.dev.demo.excepcion.RecursoDuplicadoException
+labintec.dev.demo.UsuarioService.UsuarioService ..> labintec.dev.demo.excepcion.RecursoNoEncontradoException
+labintec.dev.demo.UsuarioService.UsuarioService ..> labintec.dev.demo.repositorio.UsuarioRepository
+@enduml
